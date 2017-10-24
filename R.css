@@ -63,7 +63,7 @@ div{
 /* This block could not be tested by library.html */
 div, body>table:nth-child(1) td{
     
-  font-size: 10px;
+  font-size: 4.5rem;
   text-shadow: 1px 1px 0px #FFF;
 }
 
