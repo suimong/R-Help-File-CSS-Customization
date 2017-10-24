@@ -1,7 +1,7 @@
 /*
  * R.css
  *
- * Copyright (C) 2009-16 by RStudio, Inc.
+ * Copyright (C) 2009-11 by RStudio, Inc.
  *
  * Unless you have received this program directly from RStudio pursuant
  * to the terms of a commercial license agreement with RStudio, then
@@ -101,7 +101,134 @@ table p {
    margin-bottom: 6px;
 }
 
+/* Below is my customization to the help page appearance */
+
+body{
+  background-color: #fcfcfc;
+  font-size: 5em !important;
+}
+
+body, td{
+    font-size: 15px !important;
+    font-family: "Segoe UI" !important;
+}
+
+pre, code, table tr td:nth-child(1){
+	font-family: "Consolas" !important;
+}
+
+code{
+  border: 1px solid #E1E1E8;
+  border-radius: 3px;
+  color: #D14;
+  background-color: #F7F7F9;
+  padding: 0px 4px;
+}
+
+a{
+  text-decoration: none;
+  color: #008AC6;
+}
+
+a:hover, a:focus{
+  color: #005580;
+  text-decoration: underline;
+}
+
+pre{
+	padding: 8px;
+	border-style: solid;
+	border-width: 1px 1px 1px 6px;
+	border-color: #EAEAEA;
+	border-left-color:  #418AB5;
+	background-color: #FAFAFA;
+	/* color: #005580; */
+}
+
+body>table:nth-child(1){
+  border: 1px solid #DDE4E6;
+  border-radius: 4px;
+  background-color: #ECF0F1;
+  padding: 4px 8px;
+ }
+
+div, body>table:nth-child(1) td{
+    
+  font-size: 10pt !important;
+  text-shadow: 1px 1px 0px #FFF;
+}
+
+div{
+  color: #DDE4E6;
+}
+
+h2 {
+   font-weight: 600 !important;
+   margin-top: 0.2em;
+   padding-bottom: 10px;
+   border-bottom: 1px solid #DDE4E6;
+   color: #418AB5;
+}
+
+h3 {
+   font-weight: 600;
+   text-transform: uppercase;
+   margin-top: 1.5em;
+   margin-bottom: 0.6em;
+}
+
+h3 ~ p, h3 ~ table, h3+* table {
+    /* margin-left: 20px; */
+    padding-left: 20px;
+}
+
+h3 ~ pre{
+  margin-left: 20px;
+}
+
+h3 + *{
+	margin-top: 0px;
+}
+
+dt {
+	font-style: italic;
+}
+
+p {
+  line-height: 24px;
+}
+
+hr{
+  border-style: hidden;
+}
+
+table[summary$="block"] p {
+   margin-bottom: 16px;
+}
+
 table[summary="R argblock"] tr td:first-child {
    min-width: 24px;
    padding-right: 12px;
+}
+
+table[summary$="block"] tr {
+  vertical-align: top;
+}
+
+table[summary$="block"] td:nth-child(2){
+  margin: 0px;
+}
+
+
+h2 + table tr:nth-child(even), dl table tr:nth-child(even){
+  background-color: #EEE;
+}
+
+h2 + table, dl table{
+  border-spacing: 0px 2px;
+}
+
+h2 + table{
+  width: 100%;
+  padding-left: 20px;
 }
