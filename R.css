@@ -11,7 +11,7 @@ html{
 }
 
 body{
-  background-color: #fcfcfc;
+  background-color: rgb(252,252,252);
 }
  
 body, td {
@@ -158,10 +158,11 @@ p {
 pre{
 	padding: 8px;
 	border-style: solid;
-	border-width: 1px 1px 1px 6px;
+	border-width: 0px 0px 0px 6px;
 	border-color: #EAEAEA;
 	border-left-color:  #418AB5;
-	background-color: #FAFAFA;
+	background-color: rgb(238,238,238);
+	color: #905
 	/* color: #005580; */
 }
 
