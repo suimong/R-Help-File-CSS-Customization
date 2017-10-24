@@ -60,7 +60,6 @@ div{
   color: #DDE4E6;
 }
 
-/* This block could not be tested by library.html */
 div, body>table:nth-child(1) td{
     
   font-size: 4.5rem;
@@ -112,6 +111,7 @@ h3 {
 h3 ~ p, h3 ~ table, h3+* table {
   /* margin-left: 20px; */
   padding-left: 20px;
+  padding-right: 20px;
 }
 
 h3 ~ pre{
@@ -162,8 +162,9 @@ pre{
 	border-color: #EAEAEA;
 	border-left-color:  #418AB5;
 	background-color: rgb(238,238,238);
-	color: #905
+	color: #905;
 	/* color: #005580; */
+	margin-right: 20px;
 }
 
 pre, code, table tr td:nth-child(1){
