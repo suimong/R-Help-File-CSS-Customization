@@ -72,6 +72,15 @@ dt {
 
 h1 {
   font-size: x-large;
+  display: flex;
+  justify-content: space-between;
+  display: -webkit-flex;
+  -webkit-justify-content: space-between;
+}
+
+img.toplogo {
+  max-width: 3em;
+  vertical-align: middle;
 }
 
 h2 {
@@ -138,11 +147,6 @@ h6 {
 
 hr{
   border-style: hidden;
-}
-
-img.toplogo {
-  max-width: 4em;
-  vertical-align: middle;
 }
 
 img.arrow {
